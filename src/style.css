@@ -1,7 +1,6 @@
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: azure;
-    background-color: rgb(6, 30, 71);
     padding: 0px;
     margin: 0px;
 }
@@ -11,12 +10,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1520px;
-    height: 850px;
+    width: 100%;
+    height: 100vh;
 }
 
 .main button {
-    margin: 400px;
     background-color: #e93a0a;  
     border: none;
     border-radius: 25px;
@@ -40,12 +38,18 @@ h2 {
     margin-bottom: 600px;
     font-size: 32px;
     font-style: italic;
+    background-color: rgb(17, 17, 121);
+    padding: 8px 16px;
+    border-radius: 30px 0;
 }
 
 h3 {
     margin-top: 300px;
     font-size: 32px;
     font-style: italic;
+    background-color: rgb(17, 17, 121);
+    padding: 8px 16px;
+    border-radius: 30px;
 }
 
 .hero_1 {
@@ -53,8 +57,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1520px;
-    height: 850px;
+    width: 100%;
+    height: 100vh;
 }
 
 .hero_2 {
@@ -62,8 +66,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1520px;
-    height: 850px;
+    width: 100%;
+    height: 100vh;
 }
 
 .hero_3 {
@@ -71,8 +75,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1520px;
-    height: 850px;
+    width: 100%;
+    height: 100vh;
 }
 
 .hero_4 {
@@ -80,8 +84,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1520px;
-    height: 850px;
+    width: 100%;
+    height: 100vh;
 }
 
 .thanos {
@@ -90,26 +94,12 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1520px;
-    height: 850px;
-    animation: myAnimation 20s;
-    animation-fill-mode: forwards;
-    animation-duration: 4000ms;
+    width: 100%;
+    height: 100vh;
+    transition: all 4s;
 }
 
-@keyframes myAnimation{
-    0%{
-      opacity: 1;
- 
-    }
-    50%{
-      opacity: 0.5;
-
-    }
-    100%{
-      display: none;
-      opacity: 0;
-      transform: rotateX(90deg);
-    }
-  }
-  
+.hidden {
+    opacity: 0;
+    height: 0;
+}
