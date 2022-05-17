@@ -1,0 +1,115 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+    background-color: rgb(6, 30, 71);
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    background-image: url("../src/img/main_1600x900.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1520px;
+    height: 850px;
+}
+
+.main button {
+    margin: 400px;
+    background-color: #e93a0a;  
+    border: none;
+    border-radius: 25px;
+    color: rgb(238, 242, 243);
+    font-weight: Bold;
+    padding: 18px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 44px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.main button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h2 {
+    margin-bottom: 600px;
+    font-size: 32px;
+    font-style: italic;
+}
+
+h3 {
+    margin-top: 300px;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.hero_1 {
+    background-image: url("../src/img/captain_1600x900.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1520px;
+    height: 850px;
+}
+
+.hero_2 {
+    background-image: url("../src/img/iron-man_1600x900.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1520px;
+    height: 850px;
+}
+
+.hero_3 {
+    background-image: url("../src/img/scarlet_1600x900.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1520px;
+    height: 850px;
+}
+
+.hero_4 {
+    background-image: url("../src/img/thor_1600x900.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1520px;
+    height: 850px;
+}
+
+.thanos {
+    visibility: visible;
+    background-image: url("../src/img/thanos_1600x900.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1520px;
+    height: 850px;
+    animation: myAnimation 20s;
+    animation-fill-mode: forwards;
+    animation-duration: 4000ms;
+}
+
+@keyframes myAnimation{
+    0%{
+      opacity: 1;
+ 
+    }
+    50%{
+      opacity: 0.5;
+
+    }
+    100%{
+      display: none;
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+  }
+  
